@@ -3,13 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
+  // ustagj boln
+  mode: 'development',
   entry: './src/js/index.js',
   devServer: {
-    static: './dist',
-    },  
+    static: './docs',
+    },
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/main.js',
+    path: path.resolve(__dirname, 'docs'),
   },
   plugins: [
     new HtmlWebpackPlugin({  
